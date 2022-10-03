@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fruit_details">
+
+    <ImageView
+        android:id="@+id/fruit_image_2"
+        android:layout_width="300dp"
+
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/fruit_name_label_2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#009688"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/fruit_image_2"
+        app:layout_constraintEnd_toEndOf="@id/fruit_image_2"
+        app:layout_constraintStart_toStartOf="@id/fruit_image_2"
+        android:text="Fruit name"
+        />
+
+    <TextView
+        android:id="@+id/fruit_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Fruit price/Kilogram:"
+        android:textAlignment="textStart"
+        android:textColor="#03A9F4"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fruit_name_label_2" />
+    <TextView
+        android:id="@+id/fruit_price_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/fruit_price"
+        app:layout_constraintStart_toEndOf="@id/fruit_price"
+        android:layout_marginTop="20sp"
+        android:layout_marginStart="20sp"
+        tools:ignore="MissingConstraints"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
